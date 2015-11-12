@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Program1.java&apos; to &apos;CalAverage.java&apos;&#x0D;&#x0A;- Original project: &apos;PSP Program 1&apos;&#x0D;&#x0A;- Original element: &apos;Program1.java&apos;&#x0D;&#x0A;- Renamed element: &apos;CalAverage.java&apos;" description="Rename compilation unit &apos;Program1.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Program1.java" name="CalAverage.java" references="false" stamp="1373264496207" version="1.0"/>
+</session>

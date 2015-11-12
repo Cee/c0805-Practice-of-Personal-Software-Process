@@ -1,0 +1,43 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+
+public class CalAverage {
+	public CalAverage(){
+		ArrayList<Float> cal = new ArrayList<Float>();
+		cal = readData("data.txt");
+	}
+	
+	public static void main(String[] args){
+		new CalAverage();
+	}
+
+}
+
+public ArrayList<Float> readData(String fileName){
+	// read data
+	File file = new File(fileName);
+	ArrayList<Float> calList = new ArrayList<Float>();
+	try {
+		FileReader fReader = new FileReader(file);
+		BufferedReader bReader = new BufferedReader(fReader);
+		String lineString;
+		try {
+			while ((lineString = bReader.readLine())!= null){
+				calList.add(Float.parseFloat(lineString));
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}		
+	return calList;
+}
+
